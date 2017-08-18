@@ -25,6 +25,7 @@ LOCAL_SHARED_LIBRARIES := \
     libserviceutility
 
 LOCAL_STATIC_LIBRARIES := \
+    libbase \
     libmedia_helper \
 
 ifneq ($(strip $(AUDIO_FEATURE_ENABLED_EXTN_FORMATS)),false)
