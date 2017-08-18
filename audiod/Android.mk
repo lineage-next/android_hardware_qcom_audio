@@ -14,9 +14,10 @@ LOCAL_CFLAGS += -DGL_GLEXT_PROTOTYPES -DEGL_EGLEXT_PROTOTYPES
 
 LOCAL_SHARED_LIBRARIES := \
 	libcutils \
+	liblog \
 	libutils \
 	libbinder \
-	libmedia
+	libaudioclient
 
 ifneq (,$(findstring $(PLATFORM_VERSION), 5.0 5.1 5.1.1))
 LOCAL_SHARED_LIBRARIES += libstlport
